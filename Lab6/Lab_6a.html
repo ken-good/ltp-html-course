@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab #6</title>
+    <style>
+        table
+        {
+           width: 100%;
+            border: 0px;
+            border-collapse: collapse;
+        }
+        
+        caption
+        {
+        font-size: 18px;
+        }
+        
+        .col-table1-right {
+        text-align: right;
+        padding-left: 10px;
+        }
+
+        .col-table1-center {
+        text-align: center;
+        padding-left: 10px;
+        }        
+        
+        .col-table1-left {
+        text-align: left;
+        padding-left: 10px;
+        }
+                
+        .col-table3-right {
+        border-right: 1px solid #000000;
+        padding-left: 10px;
+        }
+      
+        .col-table3-left {
+        border-left: 1px solid #000000;
+        padding-left: 10px;
+        }
+        
+        
+    </style>    
+    </head>
+<body>
+        <label for="name" required="required">Patient Name</label>
+        <input type="text" name="name">
+        <label for"dob">Birth Date</label>
+        <input type="date" id="dob"><br/><br/>
+        
+        <fieldset>
+        <p>Although dental personnel primarily trea the area around your mouth, your mouth is a part of your entiore body.  Health problems that you may have or medication that you may be using could have an important interrelationship with the dentistry you will receive.  Thank you for answering the following questions.</p>
+        </fieldset><br/>
+        
+        <fieldset>
+        <table>
+        
+        <tr>
+        <td width="50%" class="col-table1-right">
+        <label for="CARE">Are you under a physician's care now?</label></td>
+        <td width="10%" class="col-table1-center">
+        <input type="radio" name="CARE" value="Yes">Yes
+        <input type="radio" name="CARE" value="No">No</td>
+        <td width="35%" class="col-table1-left">
+        <label for="ExpCARE">If yes, please explain</label>
+        <input type="text" name="ExpCARE" size="35"></td>
+        </tr>
+            
+        <tr>
+        <td class="col-table1-right">
+        <label id="HOSP">Have you ever been hospitalized or had a major operation?</label></td>
+        <td class="col-table1-center">
+        <input type="radio" name="HOSP" value="Yes">Yes
+        <input type="radio" name="HOSP" value="No">No</td>
+        <td class="col-table1-left">
+        <label for="ExpHOSP">If yes, please explain</label>
+        <input type="text" name="ExpHOSP" size="35"></td>
+        </tr>           
+            
+        <tr>
+        <td class="col-table1-right">
+        <label id="NECK">Have you ever had a serious head or neck injury?</label></td>
+        <td class="col-table1-center">
+        <input type="radio" name="NECK" value="Yes">Yes
+        <input type="radio" name="NECK" value="No">No</td>
+        <td class="col-table1-left">
+        <label id="ExpNECK">If yes, please explain</label>
+        <input type="text" name="ExpNECK" size="35"></td>
+        </tr> 
+        
+                    
+        <tr>
+        <td class="col-table1-right">
+        <label id="MEDS">Are you taking medications,pills or drug?</label></td>
+        <td class="col-table1-center">
+        <input type="radio" name="MEDS" value="Yes">Yes
+        <input type="radio" name="MEDS" value="No">No</td>
+        <td class="col-table1-left">
+        <label id="ExpMEDS">If yes, please explain</label>
+        <input type="text" name="ExpMEDS" size="35"></td>
+        </tr>           
+                
+                    
+        <tr>
+        <td class="col-table1-right">
+        <label id="PHEN">Do you take or have taken Phen-Fen or Redux</label></td>
+        <td class="col-table1-center">
+        <input type="radio" name="PHEN" value="Yes">Yes
+        <input type="radio" name="PHEN" value="No">No</td>
+        <td class="col-table1-left">
+        <label id="ExpPHEN">If yes, please explain</label>
+        <input type="text" name="ExpPHEN" size="35"></td>
+        </tr>           
+                
+                    
+        <tr>
+        <td class="col-table1-right">
+        <label id="otheMEDS">Have you ever taken Fosamax, Boniva, Actonel or any othermedications containing bisphosphonates?</label></td>
+        <td class="col-table1-center">
+        <input type="radio" name="OtherMEDS" value="Yes">Yes
+        <input type="radio" name="OtherMEDS" value="No">No</td>
+        <td class="col-table1-left">
+        <label id="expOtherMEDS">If yes, please explain</label>
+        <input type="text" name="expOtherMEDS" size="35"></td>
+        </tr>                     
+
+              
+        <tr>
+        <td class="col-table1-right">
+        <label id="Diet">Are you on a special diet?</label></td>
+        <td class="col-table1-center">
+        <input type="radio" name="Diet" value="Yes">Yes
+        <input type="radio" name="Diet" value="No">No</td>
+        <td class="col-table1-left">&nbsp;</td>
+        </tr>                
+        
+
+          
+        <tr>
+        <td class="col-table1-right">
+        <label id="Tobacco">Do you use tobacco?</label></td>
+        <td class="col-table1-center">
+        <input type="radio" name="Tobacco" value="Yes">Yes
+        <input type="radio" name="Tobacco" value="No">No</td>
+        <td class="col-table1-left">&nbsp;</td>
+        </tr> 
+          
+        <tr>
+        <td class="col-table1-right">
+        <label id="Controlled">Do you use controlled subsctances?</label></td>
+        <td class="col-table1-center">
+        <input type="radio" name="Controlled" value="Yes">Yes
+        <input type="radio" name="Controlled" value="No">No</td>
+        <td class="col-table1-left">&nbsp;</td>
+        </tr>               
+            
+            
+        </table>
+
+        </fieldset>
+        
+        <br>
+    
+        <fieldset> 
+        <legend>Women: Are you?</legend>                                              
+        <label id="Preg">Are you pregnant/trying to get pregnant?</label>
+        <input type="radio" name="Preg" value="Yes">Yes
+        <input type="radio" name="Preg" value="No">No  
+        
+        <label id="Contra">Taking oral contraceptive?</label>
+        <input type="radio" name="Contra" value="Yes">Yes
+        <input type="radio" name="Contra" value="No">No                                                 
+        <label id="Nursing">Nursing?</label>
+        <input type="radio" name="Nursing" value="Yes">Yes
+        <input type="radio" name="Nursing" value="No">No<br />       
+        </fieldset>  
+              <br />  
+        
+      <fieldset>
+            <legend>Are you allergic to any of the following?</legend>
+            <input type="checkbox" name="Allergies" value="Aspirin">Aspirin &nbsp;
+            <input type="checkbox" name="Allergies" value="Penicillin">Penicillin &nbsp;
+            <input type="checkbox" name="Allergies" value="Local Anesthetics">Local Anesthetics &nbsp;
+            <input type="checkbox" name="Allergies" value="Acrylic">Acrylic &nbsp;
+            <input type="checkbox" name="Allergies" value="Metal">Metal &nbsp;
+            <input type="checkbox" name="Allergies" value="Latex">Latex &nbsp;
+            <input type="checkbox" name="Allergies" value="Sulfa drugs">Sulfa drugs &nbsp;<br/>
+            <input type="checkbox" name="Allergies" value="Other">Other &nbsp;
+            If yes please explain <input type="text"><br/>
+        </fieldset> <br />
+  
+        <fieldset>   
+            <legend>Do you have, or have you had, any of the following?</legend>                                        
+            <table>
+            <tr>
+            <td width="25%" class="col-table3-right">                                        
+             <label id="Conditions">AIDS/HIV Positive</label>
+            <input type="radio" name="AIDS/HIV" value="Yes">Yes
+            <input type="radio" name="AIDS/HIV" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Cortisone Medicine</label>
+            <input type="radio" name="Cortisone" value="Yes">Yes
+            <input type="radio" name="Cortisone" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Hemophillia</label>
+            <input type="radio" name="Hemophillia" value="Yes">Yes
+            <input type="radio" name="Hemophillia" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                          
+            <label id="Conditions">Radiation Treatments</label>
+            <input type="radio" name="Radiation" value="Yes">Yes
+            <input type="radio" name="Radiation" value="No">No<br />                 
+            </td>
+            </tr>
+            
+                        
+            <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Alzheimer's</label>
+            <input type="radio" name="Alzheimer" value="Yes">Yes
+            <input type="radio" name="Alzheimer" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Diabetes</label>
+            <input type="radio" name="Diabetes" value="Yes">Yes
+            <input type="radio" name="Diabetes" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Hepatits A</label>
+            <input type="radio" name="HepA" value="Yes">Yes
+            <input type="radio" name="HepA" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Recent Weight Loss</label>
+            <input type="radio" name="RWL" value="Yes">Yes
+            <input type="radio" name="RWL" value="No">No<br />                 
+            </td>
+            </tr>                                                            
+            
+            <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Anaphylaxis</label>
+            <input type="radio" name="Anaphylaxis" value="Yes">Yes
+            <input type="radio" name="Anaphylaxis" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Drug Addiction</label>
+            <input type="radio" name="DA" value="Yes">Yes
+            <input type="radio" name="DA" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Hepatits B or C</label>
+            <input type="radio" name="hepBC" value="Yes">Yes
+            <input type="radio" name="hepBC" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Renal Dialysis</label>
+            <input type="radio" name="RenDia" value="Yes">Yes
+            <input type="radio" name="RenDia" value="No">No<br />                 
+            </td>
+            </tr>   
+               
+            <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Anemia</label>
+            <input type="radio" name="Anemia" value="Yes">Yes
+            <input type="radio" name="Anemia" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Easily Winded</label>
+            <input type="radio" name="eWind" value="Yes">Yes
+            <input type="radio" name="eWind" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Herpes</label>
+            <input type="radio" name="Herpes" value="Yes">Yes
+            <input type="radio" name="Herpes" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Rheumatic Fever</label>
+            <input type="radio" name="RF" value="Yes">Yes
+            <input type="radio" name="RF" value="No">No<br />                 
+            </td>
+            </tr>                                                   
+                    
+                        
+            <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Angina</label>
+            <input type="radio" name="Angina" value="Yes">Yes
+            <input type="radio" name="Angina" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Emphysema</label>
+            <input type="radio" name="Emphy" value="Yes">Yes
+            <input type="radio" name="Emphy" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">High Blood Pressure</label>
+            <input type="radio" name="HBP" value="Yes">Yes
+            <input type="radio" name="HBP" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Rheumatism</label>
+            <input type="radio" name="Rheumatism" value="Yes">Yes
+            <input type="radio" name="Rheumatism" value="No">No<br />                 
+            </td>
+            </tr>   
+                
+             <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Arthritis/Gout</label>
+            <input type="radio" name="Arthritis" value="Yes">Yes
+            <input type="radio" name="Arthritis" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Epilepsy or Seizures</label>
+            <input type="radio" name="EpSeiz" value="Yes">Yes
+            <input type="radio" name="EpSeiz" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">High Cholesterol</label>
+            <input type="radio" name="HC" value="Yes">Yes
+            <input type="radio" name="HC" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Scarlet Fever</label>
+            <input type="radio" name="SF" value="Yes">Yes
+            <input type="radio" name="SF" value="No">No<br />                 
+            </td>
+            </tr>   
+            
+                                                                        
+            <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Artificial Heart Valve</label>
+            <input type="radio" name="AHV" value="Yes">Yes
+            <input type="radio" name="AHV" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Excessive Bleeding</label>
+            <input type="radio" name="ExcBleed" value="Yes">Yes
+            <input type="radio" name="ExcBleed" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                         
+             <label id="Conditions">Hives or Rash</label>
+            <input type="radio" name="HivesRash" value="Yes">Yes
+            <input type="radio" name="HivesRash" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                          
+            <label id="Conditions">Shingles</label>
+            <input type="radio" name="Shingles" value="Yes">Yes
+            <input type="radio" name="Shingles" value="No">No<br />                 
+            </td>
+            </tr>   
+            
+             <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Artifical Joint</label>
+            <input type="radio" name="AJ" value="Yes">Yes
+            <input type="radio" name="AJ" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Excessive Thirst</label>
+            <input type="radio" name="ExcThirst" value="Yes">Yes
+            <input type="radio" name="ExcThirst" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Hypoglycemia</label>
+            <input type="radio" name="Hypoglycemia" value="Yes">Yes
+            <input type="radio" name="Hypoglycemia" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Sickle Cell Disease</label>
+            <input type="radio" name="SCD" value="Yes">Yes
+            <input type="radio" name="SCD" value="No">No<br />                 
+            </td>
+            </tr>   
+                
+             <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Asthma</label>
+            <input type="radio" name="Asthma" value="Yes">Yes
+            <input type="radio" name="Asthma" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Fainting Spells/Dizziness</label>
+            <input type="radio" name="FSD" value="Yes">Yes
+            <input type="radio" name="FSD" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Irregular Heartbeat</label>
+            <input type="radio" name="IrrHeart" value="Yes">Yes
+            <input type="radio" name="IrrHeart" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Sinus Trouble</label>
+            <input type="radio" name="Sinus" value="Yes">Yes
+            <input type="radio" name="Sinus" value="No">No<br />                 
+            </td>
+            </tr> 
+                
+                                                                        
+             <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Blood Disease</label>
+            <input type="radio" name="BD" value="Yes">Yes
+            <input type="radio" name="BD" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Frequent Cough</label>
+            <input type="radio" name="Cough" value="Yes">Yes
+            <input type="radio" name="Cough" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Kidney Problems</label>
+            <input type="radio" name="Kidney" value="Yes">Yes
+            <input type="radio" name="Kidney" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Spina Bifida</label>
+            <input type="radio" name="Conditions" value="Yes">Yes
+            <input type="radio" name="Conditions" value="No">No<br />                 
+            </td>
+            </tr>
+                
+            <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Blood Trasnfusion</label>
+            <input type="radio" name="BT" value="Yes">Yes
+            <input type="radio" name="BT" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Frequent Diarrhea</label>
+            <input type="radio" name="Diarrhea" value="Yes">Yes
+            <input type="radio" name="Diarrhea" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Leukemia</label>
+            <input type="radio" name="Leukemia" value="Yes">Yes
+            <input type="radio" name="Leukemia" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Stomach/Intestinal Disease</label>
+            <input type="radio" name="Stomach" value="Yes">Yes
+            <input type="radio" name="Stomach" value="No">No<br />                 
+            </td>
+            </tr>
+            
+            <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Breathing Problem</label>
+            <input type="radio" name="AIDS/HIV" value="Yes">Yes
+            <input type="radio" name="AIDS/HIV" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Frequent Headaches</label>
+            <input type="radio" name="FreqHeadaches" value="Yes">Yes
+            <input type="radio" name="FreqHeadaches" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Liver Disease</label>
+            <input type="radio" name="Liver" value="Yes">Yes
+            <input type="radio" name="Liver" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Stroke</label>
+            <input type="radio" name="Stroke" value="Yes">Yes
+            <input type="radio" name="Stroke" value="No">No<br />                 
+            </td>
+            </tr> 
+                
+                                                                    
+         <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Bruise Easily</label>
+            <input type="radio" name="BE" value="Yes">Yes
+            <input type="radio" name="BE" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Genital Herpes</label>
+            <input type="radio" name="GenitalHerpes" value="Yes">Yes
+            <input type="radio" name="Genital Herpes" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Low Blood Pressure</label>
+            <input type="radio" name="LowBlood" value="Yes">Yes
+            <input type="radio" name="LowBlood" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Swelling of Limbs</label>
+            <input type="radio" name="SwellingLimbs" value="Yes">Yes
+            <input type="radio" name="SwellingLimbs" value="No">No<br />                 
+            </td>
+            </tr>   
+                
+             <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Cancer</label>
+            <input type="radio" name="Cancer" value="Yes">Yes
+            <input type="radio" name="Cancer" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Glaucoma</label>
+            <input type="radio" name="Glaucoma" value="Yes">Yes
+            <input type="radio" name="Glaucoma" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Lung Disease</label>
+            <input type="radio" name="Lung" value="Yes">Yes
+            <input type="radio" name="Lung" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Thyroid Disease</label>
+            <input type="radio" name="Thyroid" value="Yes">Yes
+            <input type="radio" name="Thyroid" value="No">No<br />                 
+            </td>
+            </tr>  
+                                                           
+            <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Chemotherapy</label>
+            <input type="radio" name="Chemo" value="Yes">Yes
+            <input type="radio" name="Chemo" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Hay Fever</label>
+            <input type="radio" name="HayFever" value="Yes">Yes
+            <input type="radio" name="HayFever" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Mitral Valve Prolpase</label>
+            <input type="radio" name="MVP" value="Yes">Yes
+            <input type="radio" name="MVP" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Tonsillitis</label>
+            <input type="radio" name="Tonsillitis" value="Yes">Yes
+            <input type="radio" name="Tonsillitis" value="No">No<br />                 
+            </td>
+            </tr>
+                
+                        
+            <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Chest Pains</label>
+            <input type="radio" name="CP" value="Yes">Yes
+            <input type="radio" name="CP" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Heart Attack/Failure</label>
+            <input type="radio" name="HeartAttack" value="Yes">Yes
+            <input type="radio" name="HeartAttack" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Osteoporosis</label>
+            <input type="radio" name="Osteoporosis" value="Yes">Yes
+            <input type="radio" name="Osteoporosis" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Tuberculosis</label>
+            <input type="radio" name="Tuberculosis" value="Yes">Yes
+            <input type="radio" name="Tuberculosis" value="No">No<br />                 
+            </td>
+            </tr> 
+            
+                                                                       
+         <tr>
+            <td width="25%" class="col-table3-right">                                        
+             <label id="Conditions">Cold Sores/Fever Blisters</label>
+            <input type="radio" name="CSFB" value="Yes">Yes
+            <input type="radio" name="CSFB" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Heart Murmur</label>
+            <input type="radio" name="HeartMurmur" value="Yes">Yes
+            <input type="radio" name="HeartMurmur" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Pain in Jaw Joints</label>
+            <input type="radio" name="Jaw" value="Yes">Yes
+            <input type="radio" name="Jaw" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Tumors or Growths</label>
+            <input type="radio" name="Tumors" value="Yes">Yes
+            <input type="radio" name="Tumors" value="No">No<br />                 
+            </td>
+            </tr>   
+             
+             <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Congenital Heart Disorder</label>
+            <input type="radio" name="CHD" value="Yes">Yes
+            <input type="radio" name="CHD" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Heart Pacemaker</label>
+            <input type="radio" name="HeartPacemaker" value="Yes">Yes
+            <input type="radio" name="HeartPacemaker" value="No">No<br />                 
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Parathyroid Disease</label>
+            <input type="radio" name="Parathyroid" value="Yes">Yes
+            <input type="radio" name="Parathyroid" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Ulcers</label>
+            <input type="radio" name="Ulcers" value="Yes">Yes
+            <input type="radio" name="Ulcers" value="No">No<br />                 
+            </td>
+            </tr>       
+        
+             <tr>
+            <td width="25%" class="col-table3-right">                                         
+             <label id="Conditions">Convulsions</label>
+            <input type="radio" name="Conv" value="Yes">Yes
+            <input type="radio" name="Conv" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-right">                                          
+            <label id="Conditions">Heart Trouble/Disease</label>
+            <input type="radio" name="HeartTrouble" value="Yes">Yes
+            <input type="radio" name="HeartTrouble" value="No">No<br />                
+            </td>
+            
+            <td width="25%" class="col-table3-left">                                        
+             <label id="Conditions">Psychiatric Care</label>
+            <input type="radio" name="Psychiatric" value="Yes">Yes
+            <input type="radio" name="Psychiatric" value="No">No<br />                 
+            </td>
+                        
+            <td width="25%" class="col-table3-left">                                         
+            <label id="Conditions">Venereal Disease</label>
+            <input type="radio" name="VD" value="Yes">Yes
+            <input type="radio" name="VD" value="No">No<br />                 
+            </td>
+            </tr>     
+            
+            <tr>
+            <td width="25%" class="col-table3-right"> &nbsp;</td>
+            <td width="25%" class="col-table3-right"> &nbsp;</td>
+            <td width="25%" class="col-table3-right"> &nbsp;</td>
+            <td width="25%" class="col-table3-left">                                          
+            <label id="Conditions">Yellow Jaundice</label>
+            <input type="radio" name="Jaundice" value="Yes">Yes
+            <input type="radio" name="Jaundice" value="No">No<br />             
+            </td>            
+            </tr>     
+           
+            <tr>
+            <td width="25%"> &nbsp;</td>
+            <td width="25%"> &nbsp;</td>
+            <td width="25%"> &nbsp;</td>
+            <td width="25%"> &nbsp;</td>
+            </tr>         
+                
+           
+            <tr>
+            <td width="50%" colspan=3>                                        
+            <label id="Conditions">Have you ever any serious illness not listed above?</label>
+            <input type="radio" name="NotListed" value="Yes">Yes
+            <input type="radio" name="NotListed" value="No">No &nbsp;<input type="text" name="conditions" size="60">
+            </td>        
+            <td width="25%"> &nbsp;</td>
+            <td width="25%"> &nbsp;</td>
+            <td width="25%"> &nbsp;</td>
+           
+            </tr> 
+   
+                            
+         </table>         
+        </fieldset>
+        
+        <br />
+        
+        <label id="Comments">Comments</label><br />
+        <textarea rows="10" cols="100" name="comments">Enter your comments here...
+        </textarea>
+
+         <br /><br />
+        
+        <fieldset>              
+        <p>To the best of my knowledge, the questions on this form have been accurately answered. I understand that providing inaccurate informatiom can be dangerous to my (or patient's) health.  It is my responsibility to inform the dental office of changes in medical status.</p>
+        <hr> 
+        <label for="signature" required="required">Signature of Patient, Parent or Guardian</label>
+        <input type="text" name="signature">
+        <label for"date">Date</label>
+        <input type="date" id="date"><br/>
+        </fieldset>   
+    
+</body>
+</html>
